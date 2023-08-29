@@ -20,6 +20,15 @@
 	<!-- Core theme CSS (includes Bootstrap)-->
 	<link href="css/styles.css" rel="stylesheet" />
 	<link href="css/style-icon.css" rel="stylesheet" />
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYZHVD3FS7"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-EYZHVD3FS7');
+	</script>
 </head>
 
 <body class="d-flex flex-column h-100 bg-light">
@@ -28,9 +37,8 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
 			<div class="container px-5">
 				<a class="navbar-brand" href="/"><span class="fw-bolder text-primary">Mi Portafolio</span></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-					aria-expanded="false" aria-label="Toggle navigation"><span
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
 						class="navbar-toggler-icon"></span></button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
@@ -54,13 +62,20 @@
 					<section>
 						<div class="d-flex align-items-center justify-content-between mb-4">
 							<h2 class="text-primary fw-bolder mb-0">Experiencia</h2>
-							<!-- Download resume button-->
-							<!-- Note: Set the link href target to a PDF file within your project-->
-							<a class="btn btn-primary px-4 py-3" target="_blank"
-								href="https://drive.google.com/file/d/14Jtqs66DwsGqS1y9paRNA32XGZgnKitQ/view?usp=sharing">
-								<div class="d-inline-block bi bi-download me-2"></div>
-								Curriculum Vitae
-							</a>
+							<div class="d-none d-md-flex">
+								<a class="btn btn-primary px-4 py-3" target="_blank"
+									href="https://drive.google.com/file/d/14Jtqs66DwsGqS1y9paRNA32XGZgnKitQ/view?usp=sharing">
+									<div class="d-inline-block bi bi-download me-2"></div>
+									Curriculum Vitae
+								</a>
+							</div>
+							<div class="d-flex d-md-none">
+								<a class="btn btn-primary btn-circle" target="_blank"
+									href="https://drive.google.com/file/d/14Jtqs66DwsGqS1y9paRNA32XGZgnKitQ/view?usp=sharing"
+									data-toggle="tooltip" data-placement="top" title="Descargar CV">
+									<div class="d-inline-block bi bi-download"></div>
+								</a>
+							</div>
 						</div>
 						<!-- Experience Card 1-->
 						<div class="card shadow border-0 rounded-4 mb-5">
@@ -75,10 +90,10 @@
 										</div>
 									</div>
 									<div class="col-lg-7">
-										<div>Desarrollo componentes con Vue.js, mi enfoque principal es crear elementos
-											interactivos y personalizados para mejorar la experiencia del usuario,
-											además tengo experiencia en el uso de API desarrolladas con PHP Laravel para
-											manejar la comunicación entre el frontend y el backend de las aplicaciones.
+										<div class="text-justify-style">
+											Experiencia en Vue.js, capaz de desarrollar componentes interactivos y personalizados para
+											enriquecer la experiencia de usuario. Además, habilidad en la creación y gestión de APIs con PHP
+											Laravel para optimizar la comunicación entre el frontend y el backend.
 										</div>
 									</div>
 								</div>
@@ -147,8 +162,7 @@
 								<!-- Professional skills list-->
 								<div class="mb-5">
 									<div class="d-flex align-items-center mb-4">
-										<div
-											class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+										<div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
 											<i class="bi bi-tools"></i>
 										</div>
 										<h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Habilidades
@@ -203,8 +217,7 @@
 								<!-- Languages list-->
 								<div class="mb-0">
 									<div class="d-flex align-items-center mb-4">
-										<div
-											class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+										<div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
 											<i class="bi bi-code-slash"></i>
 										</div>
 										<h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Lenguajes</span>
